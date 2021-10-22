@@ -2,7 +2,7 @@
 
 
 # Project Description
-With this project I will be choosing 4 cities in the US and pulling the information for upcoming musical events from the Ticketmaster API.  On the home page I will allow the users to voice their excitment for the upcoming events, as well.
+With this project I will be choosing 4 cities in the US and pulling the information for upcoming musical events from the Ticketmaster API.  On the home page I will allow the users to voice their excitment for the upcoming events, as well. Hence the name "Look Alive" and enjoy the upcoming events!
 
 # Wireframes
 https://whimsical.com/project-2-ViDYEhYBL6Dc9Quui9JS5q
