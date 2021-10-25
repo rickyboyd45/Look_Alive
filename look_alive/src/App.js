@@ -19,19 +19,18 @@ function App() {
     <div className="App">
 
       <Header />
-      
+
       <Route path="/" exact>
       <Home />
       </Route>
 
-      <Route >
-
+      <Route>
       <Link to="/about">
-      <h3>ABOUT</h3>
-      </Link>
-      <About />
-      </Route>
-      
+        <h3>ABOUT</h3>
+        </Link>
+        <About/>
+        </Route>
+
       <Dropbox />
 
       <Feed />
@@ -41,7 +40,7 @@ function App() {
       </Route>
 
       <Form />
-      
+
       <Footer />
 
     </div>
