@@ -20,7 +20,7 @@ function App() {
 
       <Header />
 
-      <Route path="/" exact>
+      <Route path="/">
       <Home />
       </Route>
 
@@ -29,9 +29,11 @@ function App() {
         <h3>ABOUT</h3>
         </Link>
         <About/>
-        </Route>
-
+      </Route>
+      
+      <Route path="/" exact>
       <Dropbox />
+      </Route>
 
       <Feed />
 
