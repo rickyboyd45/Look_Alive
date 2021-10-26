@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
+
+import Nav from "./Nav";
 
 const Header = () => {
 
@@ -8,6 +10,8 @@ const Header = () => {
       <Link to="/" exact>
         <h3>LOOK ALIVE</h3>
       </Link>
+
+      <Nav />
 
     </div>
   )
