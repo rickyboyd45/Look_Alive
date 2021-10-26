@@ -24,15 +24,11 @@ class Feed extends Component {
 
   render() {
     return (
-      <div className="container mt-5">
-        <div className="row">
-          <div className="col">
-            <div className="card-deck">
+
+            <div>
               {this.state.events.map(event => <Events {...event.fields} /> )}
             </div>
-          </div>
-        </div>
-      </div>
+
     );
   }
 }
