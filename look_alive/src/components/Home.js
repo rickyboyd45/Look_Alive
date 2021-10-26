@@ -1,15 +1,17 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-const Home = () => {
 
-  return (
-    <div>
-      <Link to="/">
-      <h3>HOME</h3>
-      </Link>
 
-    </div>
-  )
-} 
+// const Home = () => {
 
-export default Home;
+//   return (
+//     <div>
+//       <Link to="/">
+//       <h3>HOME</h3>
+//       </Link>
+
+//     </div>
+//   )
+// } 
+
+// export default Home;
