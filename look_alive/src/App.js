@@ -12,9 +12,9 @@ import About from "./components/About";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-const API_URL = 'https://api.airtable.com/v0/appeOyl9E2Y6Dvsph/Table%201?api_key=keyEjvYopYJCZ2c7b'
+const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Table%201?api_key=keymcQ6E3LYsrFEc7'
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -38,7 +38,14 @@ function App() {
       <Header />
 
       <Route path="/">
-      <Home />
+        {posts.map((post) => (
+          <Home
+            key={post.id}
+            post={post}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+          />
+        ))}
       </Route>
 
       <Route>
@@ -57,18 +64,9 @@ function App() {
 
       <Route path="/" exact>
 
-        {posts.map((post) => (
-
-          <Feed
-            key={post.id}
-            postData={post}
-            toggleFetch={toggleFetch}
-            setToggleFetch={setToggleFetch}
-          />
-        ))}
       </Route>
 
-      <Route path="/newpost">
+      <Route path="/newposts">
         <Form 
           formType={'post'}
           toggleFetch={toggleFetch}
@@ -76,13 +74,13 @@ function App() {
         />
       </Route>
 
-      <Route path="/edit/:blog_id">
+      {/* <Route path="/edit/id">
         <Form
           formType={'put'}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />
-      </Route>
+      </Route> */}
 
       <Footer />
 

@@ -37,7 +37,7 @@ const Form = ({ formType, toggleFetch, setToggleFetch }) => {
     ev.preventDefault();
     const post_id = params.post_id;
 
-    const updatedPost = {
+    const updatedPosts = {
         records: [
           {
             id: post_id,
@@ -49,28 +49,28 @@ const Form = ({ formType, toggleFetch, setToggleFetch }) => {
           }
         ]
     }
-    await axios.put(API_URL, updatedPost);
+    await axios.put(API_URL, updatedPosts);
 
     setRedirectHome(true);
     setToggleFetch(!toggleFetch);
   }
   
   if (redirectHome) {
-    return <Redirect to="/"/>
+    return <Redirect to="/" />
 }
 
   return (
     <div>
       <form onSubmit={formType === 'post' ? handlePostRequest : handlePutRequest}>
 
-        <label htmlFor="author">Author: </label>
-          <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)}/>
-
         <label htmlFor="title">Title: </label>
           <input type="text" id="title" onChange={(ev) => setTitle(ev.target.value)}/>
 
-        <label htmlFor="text">Post: </label>
-          <input type="text" id="post" onChange={(ev) => setPosts(ev.target.value)}/>
+        <label htmlFor="post">Post: </label>
+        <input type="text" id="post" onChange={(ev) => setPosts(ev.target.value)} />
+        
+        <label htmlFor="author">Author: </label>
+          <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)}/>
 
         <input type="submit" />
 
