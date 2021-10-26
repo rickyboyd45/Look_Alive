@@ -2,7 +2,7 @@
 
 
 # Project Description
-With this project I will be choosing 4 cities in the US and pulling the information for upcoming musical events from the Ticketmaster API.  On the home page I will allow the users to voice their excitment for the upcoming events, as well. Hence the name "Look Alive" and enjoy the upcoming events!
+With Look Alive I will be pulling the information for musical events in Atlanta based on the Ticketmaster API from late October 2021 and early November 2021. On the home page I will allow the users to add comments and rate their experience at the events, as well.
 
 # Wireframes
 https://whimsical.com/project-2-ViDYEhYBL6Dc9Quui9JS5q
@@ -29,26 +29,23 @@ https://airtable.com/app2HujIdBEExdRd1/tbljgQxTwHJ4wA92o/viwpANtFsZ6ETL2Fb?block
 }
 ```
 
-https://app.ticketmaster.com/discovery/v2/
+https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 
 ```{
-    "_embedded": {
-        "events": [
-            {
-                "name": "Imagine Dragons: Mercury Tour",
-                "type": "event",
-                "id": "vvG1VZpw1unBqR",
-                "test": false,
-                "url": "https://www.ticketmaster.com/imagine-dragons-mercury-tour-miami-florida-02-06-2022/event/0D005B228DABA76F",
-                "locale": "en-us",
-                "images": [
+"records": [
+        {
+            "id": "rec3kDDr5UqQFtwq5",
+            "fields": {
+                "Date": "2021-10-30",
+                "Event": "Rakim & DJ Jazzy Jeff",
+                "Venue": "Buckhead Theatre",
+                "Link": "https://www.ticketsmarter.com/4795966/rakim-and-dj-jazzy-jeff",
+                "ImageUrl": [
                     {
-                        "ratio": "16_9",
-                        "url": "https://s1.ticketm.net/dam/a/c96/5457b1ce-bffb-49ed-b9c0-b864bb2d3c96_1502511_EVENT_DETAIL_PAGE_16_9.jpg",
-                        "width": 205,
-                        "height": 115,
-                        "fallback": false
-                    },
+                        "id": "attjytLbfMQ60JQGt",
+                        "width": 1024,
+                        "height": 683,
+                        "url": "https://dl.airtable.com/.attachments/ae33273653b0d220129f6043e062c523/ff03d5a5/1b1ef98f-a7e1-4b1a-8cfa-6b21f8bc0ff3_646611_TABLET_LANDSCAPE_3_2.jpg",
 ```
 # MVP
 * Utilize React Router, installed via NPM
@@ -62,6 +59,7 @@ https://app.ticketmaster.com/discovery/v2/
 * Apply live animation to app
 * Use local storage to save user favorites
 * Add another API
+* Style using Material-UI
 
 # Project Schedule
 |  Day        |     Deliverable               |    Status   |
@@ -77,22 +75,19 @@ https://app.ticketmaster.com/discovery/v2/
 # Timeframes
 | Component   | Priority | Estimated Time | Time Invested  |
 | ----------- |:------- :| :-------------:|:--------------:|
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
-|             |          |                |                |
+|Proposal     |          |                |                |
+
 
 # SWOT Analysis
 
 Strengths:
 
+
 Weakness:
+
 
 Oppurtunities:
 
+
 Threats:
+
