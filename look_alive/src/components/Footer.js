@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 const Footer = () => {
 
   return (
     <div>
-      
+      <hr />
+      <footer>
+        <em>© Ricky Boyd 2021</em>
+      </footer>
     </div>
   )
 } 

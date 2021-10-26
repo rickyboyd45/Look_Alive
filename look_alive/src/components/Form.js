@@ -1,27 +1,26 @@
 import { useState } from 'react';
-import { Redirect, useParams } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 import axios from 'axios';
 
 const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Table%201?api_key=keymcQ6E3LYsrFEc7'
 
-const Form = ({ formType, toggleFetch, setToggleFetch }) => {
+const Form = ({ props, toggleFetch, setToggleFetch }) => {
   const [title, setTitle] = useState('');
   const [posts, setPosts] = useState('');
   const [author, setAuthor] = useState('');
-  const [redirectHome, setRedirectHome] = useState(false);
   const params = useParams();
 
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
 
     const newPosts = {
-      records: [
+      'records': [
         {
-          fields: {
-            title,
-            posts,
-            author
+          'fields': {
+            'title': title,
+            'posts': posts,
+            'author': author
           }
         }
       ]
@@ -29,35 +28,8 @@ const Form = ({ formType, toggleFetch, setToggleFetch }) => {
 
     await axios.post(API_URL, newPosts);
 
-    setRedirectHome(true);
     setToggleFetch(!toggleFetch);
   }
-  
-  const handlePutRequest = async (ev) => {
-    ev.preventDefault();
-    const post_id = params.post_id;
-
-    const updatedPosts = {
-        records: [
-          {
-            id: post_id,
-            fields: {
-              title,
-              posts,
-              author
-            }
-          }
-        ]
-    }
-    await axios.put(API_URL, updatedPosts);
-
-    setRedirectHome(true);
-    setToggleFetch(!toggleFetch);
-  }
-  
-  if (redirectHome) {
-    return <Redirect to="/" />
-}
 
   return (
     <div>
