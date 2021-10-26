@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Redirect, useParams } from "react-router-dom";
 import axios from 'axios';
 
-const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=keymcQ6E3LYsrFEc7'
+const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post/'
 
   const Form = ({ formType, toggleFetch, setToggleFetch }) => {
     const [title, setTitle] = useState('');
@@ -20,8 +20,8 @@ const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=keym
           {
             fields: {
               title,
-              posts,
-              author
+              author,
+              posts
             }
           }
         ]
@@ -35,16 +35,16 @@ const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=keym
     
     const handlePutRequest = async (ev) => {
       ev.preventDefault();
-      const blog_id = params.blog_id;
+      const post_id = params.post_id;
 
       const updatedPost = {
           records: [
             {
-              id: blog_id,
+              id: post_id,
               fields: {
                 title,
-                posts,
-                author
+                author,
+                posts
               }
             }
           ]

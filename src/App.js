@@ -10,6 +10,8 @@ import Feed from "./components/Feed"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Post from './components/Post';
+import About from './components/About';
+import Events from './components/Events';
 
 const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=keymcQ6E3LYsrFEc7'
 
@@ -41,10 +43,10 @@ function App() {
       <Form />
 
         <Route path="/" exact>
-      {posts.map((blogPost) => (
+      {posts.map((post) => (
           <Post 
-          key={blogPost.id}
-          postData={blogPost}
+          key={post.id}
+          postData={post}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />
@@ -59,13 +61,21 @@ function App() {
         />
       </Route>
 
-      <Route path="/edit/:blog_id">
+      <Route path="/edit/:post_id">
         <Form
           formType={'put'}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />
       </Route>
+
+    <Route path="/about">
+    <About/>
+      </Route>
+      
+    <Route path="/events">
+    <Events />
+    </Route>
       
 
       <Footer />
