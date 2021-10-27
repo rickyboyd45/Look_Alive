@@ -26,8 +26,8 @@ return (
         
         // <p>{record.fields.event}</p>
         // <p>{record.fields.ticketInfo}</p>
-        // <p>{record.fields.venue}</p>
-        <p>{record.fields.date}</p>
+        <p>{record.fields.venue}</p>
+        // <p>{record.fields.date}</p>
       
       ))
     ) : (
