@@ -32,10 +32,7 @@ function App() {
   return (
     <div className="App">
 
-      
       <Header />
-
-      
 
         <Route path="/" exact>
       {posts.map((post) => (
