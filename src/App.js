@@ -40,8 +40,6 @@ function App() {
 
       {/* <Feed /> */}
 
-      <Form />
-
         <Route path="/" exact>
       {posts.map((post) => (
           <Post 
@@ -53,7 +51,7 @@ function App() {
       ))}
       </Route>
 
-      <Route path="/newpost">
+      <Route path="/newpost" exact>
         <Form 
           formType={'post'}
           toggleFetch={toggleFetch}
@@ -61,7 +59,7 @@ function App() {
         />
       </Route>
 
-      <Route path="/edit/:post_id">
+      <Route path="/edit/:post_id" exact>
         <Form
           formType={'put'}
           toggleFetch={toggleFetch}
@@ -73,7 +71,7 @@ function App() {
     <About/>
       </Route>
       
-    <Route path="/events">
+    <Route path="/events" exact>
     <Events />
     </Route>
       
