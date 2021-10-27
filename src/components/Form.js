@@ -1,4 +1,4 @@
-// Will house comment section
+
 import { useState } from 'react';
 import { Redirect, useParams } from "react-router-dom";
 import axios from 'axios';

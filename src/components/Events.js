@@ -24,7 +24,10 @@ return (
 {concerts.length > 0 ? (
       concerts.map((record) => (
         
-        <p>{record.fields.event, record.fields.ticketInfo}</p>
+        // <p>{record.fields.event}</p>
+        // <p>{record.fields.ticketInfo}</p>
+        // <p>{record.fields.venue}</p>
+        <p>{record.fields.date}</p>
       
       ))
     ) : (

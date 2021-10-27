@@ -3,7 +3,7 @@ import './App.css';
 import axios from "axios";
 
 import { useEffect, useState } from 'react';
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import Form from "./components/Form";
 import Footer from "./components/Footer";
@@ -20,11 +20,9 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(true);
 
   useEffect(() => {
-    console.log('Getting Posts');
 
     const getPosts = async () => {
       const resp = await axios.get(API_URL);
-      console.log(resp.data);
       setPosts(resp.data.records);
     }
 
