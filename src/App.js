@@ -5,10 +5,10 @@ import axios from "axios";
 import { useEffect, useState } from 'react';
 import { Route, Link } from "react-router-dom";
 
-import Form from "./components/Form"
-import Feed from "./components/Feed"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Form from "./components/Form";
+import Feed from "./components/Feed";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Post from './components/Post';
 import About from './components/About';
 import Events from './components/Events';
@@ -38,7 +38,7 @@ function App() {
       
       <Header />
 
-      {/* <Feed /> */}
+      
 
         <Route path="/" exact>
       {posts.map((post) => (
@@ -68,11 +68,12 @@ function App() {
       </Route>
 
     <Route path="/about">
-    <About/>
-      </Route>
+      <About/>
+    </Route>
       
-    <Route path="/events" exact>
-    <Events />
+      <Route path="/events" exact>
+        <Feed  />
+        {/* <Events /> */}
     </Route>
       
 

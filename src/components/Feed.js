@@ -5,27 +5,35 @@ import axios from "axios";
 const API_URL2 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7'
 
 const Feed = () => {
-  const [concert, setConcert] = useState([])
+  const [concerts, setConcerts] = useState({})
   
-  useEffect(() => {
-    const fetchConcert = async () => {
-      const resp = await axios.get(API_URL2);
-      setConcert(resp.data);
-      console.log(resp.data)
-    };
-    fetchConcert();
-  }, [])
+useEffect(() => {
+  fetch("https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7")
+    .then((res) => res.json())
+    .then((data) => {
+      setConcerts(data.records);
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}, []);
+
 
 return (
-    <div>
-    {concert.map((music) => (
-      <div>
-          <Link to={`${music.event}`} >
-          <img src={`${music.imageURL}`}></img>
-        </Link>
-      </div>
-    ))
-    }
+  <div>
+
+{concerts.length > 0 ? (
+      concerts.map((record) => (
+        <a href={record.fields.url} key={record.id}>
+
+          <p>{record.fields.event}</p>
+        </a>
+      ))
+    ) : (
+      <p>Fetching Data...</p>
+    )}
+
 
     </div>
   );
