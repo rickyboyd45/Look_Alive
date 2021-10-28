@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import ReactDOM from 'react-dom';
+import React from "react";
 
 import './events.css';
 
@@ -22,8 +24,9 @@ useEffect(() => {
     });
 }, []);
 
-return (
-    <div class="d-flex align-content-stretch flex-wrap">
+  return (
+  
+    <div classname="content" class="d-flex align-content-stretch flex-wrap">
 
 {concerts.length > 0 ? (
       concerts.map((record) => (
