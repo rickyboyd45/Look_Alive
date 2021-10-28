@@ -47,6 +47,7 @@ return (
           
       </div>
 
+      <div className="post">
       {posts.map((post) => (
           <Post 
           key={post.id}
@@ -55,7 +56,7 @@ return (
           setToggleFetch={setToggleFetch}
         />
       ))}
-        
+      </div>  
     </Route>
 
     <Route path="/newpost" exact>
