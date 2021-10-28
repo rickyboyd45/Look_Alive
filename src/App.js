@@ -1,6 +1,5 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css"
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 import axios from "axios";
 
@@ -9,7 +8,6 @@ import { Route } from "react-router-dom";
 
 import Form from "./components/Form";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Post from './components/Post';
 import About from './components/About';
 import Events from './components/Events';
@@ -36,27 +34,6 @@ function App() {
 
   return (
     <div className="App">
-
-      {/* <Navbar bg="navColor" varient="dark"
-      sticky="top" expand="sm">
-        
-
-        <Navbar.Toggle />
-
-        <Navbar.Collapse>
-          <Nav >
-
-          <Nav.Link href="home">HOME</Nav.Link>
-          <Nav.Link href="about-us">ABOUT US</Nav.Link>
-          <Nav.Link href="new-post">NEW POST</Nav.Link>
-          <Nav.Link href="events">EVENTS</Nav.Link>
-
-          </Nav>
-        </Navbar.Collapse>
-
-
-        
-      </Navbar> */}
 
       <Navi />
 

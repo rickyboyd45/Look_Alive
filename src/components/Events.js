@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import Card from 'react-bootstrap/Card'
+
 
 const API_URL2 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7'
 
@@ -25,13 +27,24 @@ return (
   concerts.map((record) => (
         
     <div>
-      <a href={record.fields.ticketInfo} key={record.id}>
-      <img src={record.fields.imageURL[0].url} alt={record.fields.event}/>
-      </a>
-      <p>Click Photo For Ticket Info</p>
-      <h2>Artist: {record.fields.event}</h2>
-      <h3>Venue: {record.fields.venue}</h3>
-      <h4>Date: {record.fields.date}</h4>
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={record.fields.imageURL[0].url} />
+    
+        <Card.Body>
+          <Card.Title>Artist: {record.fields.event}</Card.Title>
+        </Card.Body>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Venue: {record.fields.venue}</li>
+        <li class="list-group-item">Date: {record.fields.date}</li>
+      </ul>
+
+        <Card.Body>
+    <Card.Link href={record.fields.ticketInfo}>Click Here For Ticket Info</Card.Link>
+  </Card.Body>
+      </Card>
+      
     </div>
   ))
     ) : (
