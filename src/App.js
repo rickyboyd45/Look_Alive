@@ -1,6 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css"
-import { Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 import axios from "axios";
 
@@ -34,9 +34,26 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar bg="dark">
+      {/* <Navbar bg="navColor" varient="dark"
+      sticky="top" expand="sm">
+        
 
-      </Navbar>
+        <Navbar.Toggle />
+
+        <Navbar.Collapse>
+          <Nav >
+
+          <Nav.Link href="home">HOME</Nav.Link>
+          <Nav.Link href="about-us">ABOUT US</Nav.Link>
+          <Nav.Link href="new-post">NEW POST</Nav.Link>
+          <Nav.Link href="events">EVENTS</Nav.Link>
+
+          </Nav>
+        </Navbar.Collapse>
+
+
+        
+      </Navbar> */}
 
       <Header />
 
@@ -71,7 +88,7 @@ function App() {
       <About/>
     </Route>
       
-      <Route path="/events" exact>
+    <Route path="/events" exact>
         <Events />
     </Route>
       
