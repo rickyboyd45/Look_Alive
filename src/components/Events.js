@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
 
 import './events.css';
 
@@ -24,17 +23,16 @@ useEffect(() => {
 }, []);
 
 return (
-    <div >
-<Container maxwidth='xs'>
+    <div class="d-flex align-content-stretch flex-wrap">
+
 {concerts.length > 0 ? (
       concerts.map((record) => (
         
     <div key={record.id}>
       
-      
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={record.fields.imageURL[0].url} />
-    
+
         <Card.Body>
           <Card.Title>Artist: {record.fields.event}</Card.Title>
         </Card.Body>
@@ -46,9 +44,8 @@ return (
 
         <Card.Body>
     <Card.Link href={record.fields.ticketInfo}>Click Here For Ticket Info</Card.Link>
-        </Card.Body>
-    </Card>
-      
+            </Card.Body>
+          </Card>
 
     </div>
   ))
@@ -57,7 +54,7 @@ return (
       <p>Retrieving Data...</p>
     
   )}
-</Container>
+
     </div>
   );
 };
