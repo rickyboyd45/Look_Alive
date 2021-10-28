@@ -61,11 +61,6 @@ return (
 
     <Route path="/newpost" exact>
 
-      <div>
-        <img src="https://i.pinimg.com/736x/56/db/23/56db23ae7ee02ec435492427a8e4f19e--funny-band-memes-marching-band-memes.jpg" class="img-fluid" alt="Responsive image">
-        </img>
-      </div>
-
       <Form 
           formType={'post'}
           toggleFetch={toggleFetch}
@@ -85,7 +80,7 @@ return (
     </Route>
 
     <Route path="/about">
-      <div>
+      <div className="meme">
         <img src="https://www.washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/glass_animals_at_930_club_lisa_walker_credit.jpg?h=199d8c1f&itok=ksRkQb40" class="img-fluid" alt="Responsive image">
         </img>
         </div>

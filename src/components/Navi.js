@@ -20,7 +20,7 @@ const Navi = () => {
 
           <Nav.Link href="/">HOME</Nav.Link>
           <Nav.Link href="about">ABOUT US</Nav.Link>
-          <Nav.Link href="newpost">NEW POST</Nav.Link>
+          <Nav.Link href="newpost">CREATE NEW POST</Nav.Link>
           <Nav.Link href="events">EVENTS</Nav.Link>
 
           </Nav>

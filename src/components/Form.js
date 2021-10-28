@@ -59,7 +59,8 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
     return <Redirect to="/"/>
 }
 
-  return (
+    return (
+    
     <div className="form">
             <form onSubmit={formType === 'post' ? handlePostRequest : handlePutRequest}>
                 <label htmlFor="title">Title: </label>
