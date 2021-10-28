@@ -1,4 +1,6 @@
 import './App.css';
+import "bootstrap/dist/css/bootstrap.css"
+import { Navbar } from 'react-bootstrap';
 
 import axios from "axios";
 
@@ -31,6 +33,10 @@ function App() {
 
   return (
     <div className="App">
+
+      <Navbar bg="dark">
+
+      </Navbar>
 
       <Header />
 
