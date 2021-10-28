@@ -41,7 +41,7 @@ function App() {
 
       <Route path="/" exact>
       <div>
-        <img src="https://iso.500px.com/wp-content/uploads/2014/04/2048-8.jpg" class="img-fluid" alt="Responsive image">
+        <img src="http://theotherpress.ca/wp-content/uploads/2019/02/ARTS_Concert.jpg" class="img-fluid" alt="Responsive image">
         </img>
       </div>
 
@@ -56,6 +56,11 @@ function App() {
       </Route>
 
       <Route path="/newpost" exact>
+      <div>
+        <img src="https://i.pinimg.com/736x/56/db/23/56db23ae7ee02ec435492427a8e4f19e--funny-band-memes-marching-band-memes.jpg" class="img-fluid" alt="Responsive image">
+        </img>
+      </div>
+
         <Form 
           formType={'post'}
           toggleFetch={toggleFetch}
@@ -71,7 +76,11 @@ function App() {
         />
       </Route>
 
-    <Route path="/about">
+      <Route path="/about">
+      <div>
+        <img src="https://www.washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/glass_animals_at_930_club_lisa_walker_credit.jpg?h=199d8c1f&itok=ksRkQb40" class="img-fluid" alt="Responsive image">
+        </img>
+      </div>
       <About/>
     </Route>
       

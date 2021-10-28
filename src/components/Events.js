@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import ReactDOM from 'react-dom';
 import React from "react";
 
 import './events.css';
 
 import Card from 'react-bootstrap/Card'
+import "bootstrap/dist/css/bootstrap.css"
 
 
 const API_URL2 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7'
