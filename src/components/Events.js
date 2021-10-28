@@ -26,7 +26,7 @@ useEffect(() => {
 
   return (
   
-    <div classname="content" class="d-flex align-content-stretch flex-wrap">
+    <div class="d-flex align-content-stretch flex-wrap">
 
 {concerts.length > 0 ? (
       concerts.map((record) => (

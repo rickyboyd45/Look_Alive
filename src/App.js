@@ -39,7 +39,12 @@ function App() {
 
       <Navi />
 
-        <Route path="/" exact>
+      <Route path="/" exact>
+      <div>
+        <img src="https://iso.500px.com/wp-content/uploads/2014/04/2048-8.jpg" class="img-fluid" alt="Responsive image">
+        </img>
+      </div>
+
       {posts.map((post) => (
           <Post 
           key={post.id}

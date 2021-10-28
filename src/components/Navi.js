@@ -32,6 +32,8 @@ const Navi = () => {
 
       </Navbar>
 
+      
+
     </div>
   )
 } 
