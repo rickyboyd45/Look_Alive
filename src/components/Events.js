@@ -19,20 +19,25 @@ useEffect(() => {
 }, []);
 
 return (
-  <div >
+    <div >
 
 {concerts.length > 0 ? (
-      concerts.map((record) => (
+  concerts.map((record) => (
         
-        <p>{record.fields.event}</p>
-        // <p>{record.fields.venue}</p>
-        // <p>{record.fields.ticketInfo}</p>
-        // <p>{record.fields.date}</p>
-      
-      ))
+    <div>
+      <a href={record.fields.ticketInfo} key={record.id}>
+      <img src={record.fields.imageURL[0].url} alt={record.fields.event}/>
+      </a>
+      <p>{record.fields.event}</p>
+      <p>{record.fields.venue}</p>
+      <p>{record.fields.date}</p>
+    </div>
+  ))
     ) : (
+
       <p>Fetching Data...</p>
-    )}
+    
+  )}
 
     </div>
   );
