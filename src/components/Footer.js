@@ -1,11 +1,11 @@
-
+import './footer.css';
 const Footer = () => {
 
   return (
-    <div>
+    <div >
       <hr />
       <footer>
-        <em>© Ricky Boyd 2021</em>
+        <em className="footy">© Ricky Boyd 2021</em>
       </footer>
     </div>
   )

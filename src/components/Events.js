@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+
+import './events.css';
 
 import Card from 'react-bootstrap/Card'
 
@@ -6,7 +9,7 @@ import Card from 'react-bootstrap/Card'
 const API_URL2 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7'
 
 const Events = () => {
-  const [concerts, setConcerts] = useState({})
+const [concerts, setConcerts] = useState({})
   
 useEffect(() => {
   fetch(`${API_URL2}`)
@@ -22,12 +25,13 @@ useEffect(() => {
 
 return (
     <div >
-
+<Container maxwidth='xs'>
 {concerts.length > 0 ? (
-  concerts.map((record) => (
+      concerts.map((record) => (
         
-    <div>
-
+    <div key={record.id}>
+      
+      
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={record.fields.imageURL[0].url} />
     
@@ -35,16 +39,17 @@ return (
           <Card.Title>Artist: {record.fields.event}</Card.Title>
         </Card.Body>
 
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Venue: {record.fields.venue}</li>
-        <li class="list-group-item">Date: {record.fields.date}</li>
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item">Venue: {record.fields.venue}</li>
+        <li className="list-group-item">Date: {record.fields.date}</li>
       </ul>
 
         <Card.Body>
     <Card.Link href={record.fields.ticketInfo}>Click Here For Ticket Info</Card.Link>
-  </Card.Body>
-      </Card>
+        </Card.Body>
+    </Card>
       
+
     </div>
   ))
     ) : (
@@ -52,7 +57,7 @@ return (
       <p>Retrieving Data...</p>
     
   )}
-
+</Container>
     </div>
   );
 };
