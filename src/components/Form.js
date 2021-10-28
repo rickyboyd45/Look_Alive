@@ -1,4 +1,4 @@
-
+import './form.css';
 import { useState } from 'react';
 import { Redirect, useParams } from "react-router-dom";
 import axios from 'axios';
@@ -60,7 +60,7 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
 }
 
   return (
-    <div>
+    <div className="form">
             <form onSubmit={formType === 'post' ? handlePostRequest : handlePutRequest}>
                 <label htmlFor="title">Title: </label>
         <input value={title}type="text" id="title" onChange={(ev) => setTitle(ev.target.value)}/>
@@ -72,7 +72,7 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
                 <input value={author} type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)}/>
 
                 <input type="submit" />
-            </form>
+      </form>
 
     </div>
   )

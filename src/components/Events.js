@@ -31,7 +31,7 @@ useEffect(() => {
 {concerts.length > 0 ? (
       concerts.map((record) => (
         
-    <div key={record.id}>
+    <div  key={record.id}>
       
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={record.fields.imageURL[0].url} />

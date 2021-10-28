@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.css"
 const Footer = () => {
 
   return (
-    <div  className="footer">
+    <div className="footer">
       <hr />
       <footer>
-        <em className="footy">© Ricky Boyd 2021</em>
+        <em>© Ricky Boyd 2021</em>
       </footer>
     </div>
   )
