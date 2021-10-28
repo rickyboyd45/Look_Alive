@@ -13,6 +13,9 @@ import Header from "./components/Header";
 import Post from './components/Post';
 import About from './components/About';
 import Events from './components/Events';
+import Navi from "./components/Navi";
+
+
 
 const API_URL = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=keymcQ6E3LYsrFEc7'
 
@@ -55,7 +58,7 @@ function App() {
         
       </Navbar> */}
 
-      <Header />
+      <Navi />
 
         <Route path="/" exact>
       {posts.map((post) => (
