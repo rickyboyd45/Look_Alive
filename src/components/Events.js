@@ -28,9 +28,9 @@ return (
       <a href={record.fields.ticketInfo} key={record.id}>
       <img src={record.fields.imageURL[0].url} alt={record.fields.event}/>
       </a>
-      <p>{record.fields.event}</p>
-      <p>{record.fields.venue}</p>
-      <p>{record.fields.date}</p>
+      <h1>Artist: {record.fields.event}</h1>
+      <h2>Venue: {record.fields.venue}</h2>
+      <h3>Date: {record.fields.date}</h3>
     </div>
   ))
     ) : (
