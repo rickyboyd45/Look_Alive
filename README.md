@@ -73,10 +73,17 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 |Oct. 29      | Project Presentations         |             |
 
 # Timeframes
-| Component   | Priority | Estimated Time | Time Invested  |
-| ----------- |:------- :| :-------------:|:--------------:|
-|Proposal     |          |                |                |
-
+| Component      | Priority | Estimated Time | Time Invested  |
+| ---------------|:------- :| :-------------:|:--------------:|
+|Proposal        |H         |4 hrs           |4 hrs           |
+|Pseudocode      |H         |4 hrs           |4 hrs           |
+|Airtable Setup  |H         |4 hrs           |4 hrs           |
+|Displaying Data |H         |2 hrs           |6 hrs           |
+|Create Form     |H         |2 hrs           |4 hrs           |
+|Create Navbar   |H         |2 hrs           |2 hrs           |
+|Application CSS |H         |4 hrs           |6 hrs           |
+|Linting         |H         |2 hrs           |2 hrs           |
+|TOTAL           |H         |24 hrs          |32 hrs          |  
 
 # SWOT Analysis
 
@@ -91,3 +98,12 @@ Oppurtunities: My weakness in CSS was also an opportunity for me to get better a
 
 Threats: Moving forward the main threats I see is keeping everything together and finding a better way to get started up.
 
+References:
+
+* https://w3collective.com/airtable-api-react/
+
+* Adrian Twarog-https://www.youtube.com/watch?v=8pKjULHzs0s
+
+* Masteryst-https://www.youtube.com/watch?v=-HEjsVkfjOk
+
+* https://react-bootstrap.github.io/components/cards/
