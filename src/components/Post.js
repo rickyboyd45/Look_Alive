@@ -13,12 +13,15 @@ const Post = ({ postData, toggleFetch, setToggleFetch }) => {
 
   return (
 <div className="new">
-  <h4>Title: {postData.fields.title}</h4>
-  <p>{postData.fields.posts}</p>
-  <em>Author: {postData.fields.author}</em>
+    <h5>{postData.fields.title}</h5>
+    
+    <h6>{postData.fields.posts}</h6>
+    
+    <h6>Author: {postData.fields.author}</h6>
 
-  <button onClick={deletePost}>Delete</button>
-  <Link to={`/edit/${postData.id}`}>Edit Post</Link>
+    <button onClick={deletePost} type="button" class="btn btn-secondary">Delete</button>
+    <Link to={`/edit/${postData.id}`}>Edit Post</Link>
+
 </div>
   )
 } 
