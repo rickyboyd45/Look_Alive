@@ -22,9 +22,7 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
               title,
               author,
               posts
-            }
-          }
-        ]
+            }}]
       }
   
       await axios.post(API_URL1, newPost);
@@ -45,10 +43,9 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
                 title,
                 author,
                 posts
-              }
-            }
-          ]
+              }}]
       }
+
       await axios.put(API_URL1, updatedPost);
   
       setRedirectHome(true);
@@ -60,21 +57,19 @@ const API_URL1 = 'https://api.airtable.com/v0/app2HujIdBEExdRd1/Post?api_key=key
 }
 
     return (
-    
     <div className="form">
-            <form onSubmit={formType === 'post' ? handlePostRequest : handlePutRequest}>
-                <label htmlFor="title">Title: </label>
-        <input value={title}type="text" id="title" onChange={(ev) => setTitle(ev.target.value)}/>
+        <form onSubmit={formType === 'post' ? handlePostRequest : handlePutRequest}>
+        <label htmlFor="title">Title: </label>
+          <input value={title}type="text" id="title" onChange={(ev) => setTitle(ev.target.value)}/>
 
-                <label htmlFor="posts">Posts: </label>
-                <input value={posts}type="text" id="posts" onChange={(ev) => setPosts(ev.target.value)}/>
+        <label htmlFor="posts">Posts: </label>
+          <input value={posts}type="text" id="posts" onChange={(ev) => setPosts(ev.target.value)}/>
 
-                <label htmlFor="author">Author: </label>
-                <input value={author} type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)}/>
+        <label htmlFor="author">Author: </label>
+          <input value={author} type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)}/>
 
-                <input type="submit" />
+          <input type="submit" />
       </form>
-
     </div>
   )
 } 
