@@ -23,6 +23,6 @@ const Post = ({ postData, toggleFetch, setToggleFetch }) => {
     <Link to={`/edit/${postData.id}`}>Edit Post</Link>
 </div>
   )
-} 
+}
 
 export default Post;
