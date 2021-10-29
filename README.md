@@ -85,7 +85,7 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 |Create Navbar   | H        | 2 hrs          | 2 hrs          |
 |Application CSS | H        | 4 hrs          | 6 hrs          |
 |Linting         | H        | 2 hrs          | 2 hrs          |
-|TOTAL           | H        |                |                |  
+|TOTAL           | H        | 24 hrs         | 32 hrs         |  
 
 # SWOT Analysis
 
