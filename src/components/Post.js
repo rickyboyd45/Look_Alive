@@ -21,7 +21,6 @@ const Post = ({ postData, toggleFetch, setToggleFetch }) => {
 
     <button onClick={deletePost} type="button" class="btn btn-secondary">Delete</button>
     <Link to={`/edit/${postData.id}`}>Edit Post</Link>
-
 </div>
   )
 } 

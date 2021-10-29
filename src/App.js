@@ -35,12 +35,11 @@ function App() {
   }, [toggleFetch]);
 
 return (
-      <div className="App">
+    <div className="App">
 
       <Navi />
 
     <Route path="/" exact>
-
     <div className="image1">
         <img src="https://www.washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/glass_animals_at_930_club_lisa_walker_credit.jpg?h=199d8c1f&itok=ksRkQb40" class="img-fluid" alt="Responsive image">
         </img>
@@ -59,7 +58,6 @@ return (
     </Route>
 
     <Route path="/newpost" exact>
-
     <div className="image2">
         <img src="https://www.washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/glass_animals_at_930_club_lisa_walker_credit.jpg?h=199d8c1f&itok=ksRkQb40" class="img-fluid" alt="Responsive image">
         </img>
@@ -70,34 +68,29 @@ return (
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
       />
-
     </Route>
 
     <Route path="/edit/:post_id" exact>
-
       <Form
           formType={'put'}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
       />
-
     </Route>
 
     <Route path="/about">
       <div className="image3">
         <img src="https://www.washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/glass_animals_at_930_club_lisa_walker_credit.jpg?h=199d8c1f&itok=ksRkQb40" class="img-fluid" alt="Responsive image">
         </img>
-        </div>
+      </div>
         
       <About />
-        
     </Route>
       
     <Route path="/events" exact>
       <Events />
     </Route>
       
-
       <Footer />
 
       </div>
