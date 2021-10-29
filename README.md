@@ -64,12 +64,12 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 # Project Schedule
 |  Day        |     Deliverable               |    Status   |
 | ----------- |-------------------------------| :----------:|
-|Oct. 21-22   | Wireframes/ Timeframes/ README|             |
-|Oct. 22      | Project Approval              |             |
-|Oct. 25      | Core Application Structure    |             |
-|Oct. 26      | Pseudocode / actual code      |             |
-|Oct. 27      | Initial Clickable Model       |             |
-|Oct. 28      | MVP                           |             |
+|Oct. 21-22   | Wireframes/ Timeframes/ README|  Completed  |
+|Oct. 22      | Project Approval              |  Completed  |
+|Oct. 25      | Core Application Structure    |  Completed  |
+|Oct. 26      | Pseudocode / actual code      |  Completed  |
+|Oct. 27      | Initial Clickable Model       |  Completed  |
+|Oct. 28      | MVP                           |  Completed  |
 |Oct. 29      | Project Presentations         |             |
 
 # Timeframes
@@ -80,14 +80,14 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 
 # SWOT Analysis
 
-Strengths:
+Strengths: My strength was having the idea mapped out and staying true to the path.
 
 
-Weakness:
+Weakness: My weaknesses through this project was in CSS and getting the components to render where I wanted them to.
 
 
-Oppurtunities:
+Oppurtunities: My weakness in CSS was also an opportunity for me to get better at CSS and bootstrap through research.
 
 
-Threats:
+Threats: Moving forward the main threats I see is keeping everything together and finding a better way to get started up.
 

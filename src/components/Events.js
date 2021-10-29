@@ -27,34 +27,31 @@ useEffect(() => {
   return (
   
     <div className="card" class="d-flex align-content-stretch flex-wrap">
-
-{concerts.length > 0 ? (
+    {concerts.length > 0 ? (
       concerts.map((record) => (
         
     <div key={record.id}>
-      
-    <Card style={{ width: '18rem' }}>
-      <Card.Img  src={record.fields.imageURL[0].url} />
+      <Card style={{ width: '18rem' }}>
+        <Card.Img  src={record.fields.imageURL[0].url} />
 
         <Card.Body>
           <Card.Title>Artist: {record.fields.event}</Card.Title>
         </Card.Body>
 
-      <ul className="list-group list-group-flush">
-        <li className="list-group-item">Venue: {record.fields.venue}</li>
-        <li className="list-group-item">Date: {record.fields.date}</li>
-      </ul>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">Venue: {record.fields.venue}</li>
+          <li className="list-group-item">Date: {record.fields.date}</li>
+        </ul>
 
         <Card.Body>
-    <Card.Link href={record.fields.ticketInfo}>Click Here For Ticket Info</Card.Link>
+          <Card.Link href={record.fields.ticketInfo}>Click Here For Ticket Info</Card.Link>
         </Card.Body>
-    </Card>
-
+      </Card>
     </div>
   ))
     ) : (
 
-      <p>Retrieving Data...</p>
+    <p>Retrieving Data...</p>
     
   )}
 
