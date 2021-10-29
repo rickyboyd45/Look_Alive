@@ -77,15 +77,15 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 
 | Component      | Priority | Estimated Time | Time Invested  |
 | ---------------|:------- :| :-------------:|:--------------:|
-|Proposal        |H         |4 hrs           |4 hrs           |
-|Pseudocode      |H         |4 hrs           |4 hrs           |
-|Airtable Setup  |H         |4 hrs           |4 hrs           |
-|Displaying Data |H         |2 hrs           |6 hrs           |
-|Create Form     |H         |2 hrs           |4 hrs           |
-|Create Navbar   |H         |2 hrs           |2 hrs           |
-|Application CSS |H         |4 hrs           |6 hrs           |
-|Linting         |H         |2 hrs           |2 hrs           |
-|TOTAL           |H         |                |                |  
+|Proposal        | H        | 4 hrs          | 4 hrs          |
+|Pseudocode      | H        | 4 hrs          | 4 hrs          |
+|Airtable Setup  | H        | 4 hrs          | 4 hrs          |
+|Displaying Data | H        | 2 hrs          | 6 hrs          |
+|Create Form     | H        | 2 hrs          | 4 hrs          |
+|Create Navbar   | H        | 2 hrs          | 2 hrs          |
+|Application CSS | H        | 4 hrs          | 6 hrs          |
+|Linting         | H        | 2 hrs          | 2 hrs          |
+|TOTAL           | H        |                |                |  
 
 # SWOT Analysis
 
