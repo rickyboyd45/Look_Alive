@@ -62,6 +62,7 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 * Style using Material-UI
 
 # Project Schedule
+
 |  Day        |     Deliverable               |    Status   |
 | ----------- |-------------------------------| :----------:|
 |Oct. 21-22   | Wireframes/ Timeframes/ README|  Completed  |
@@ -73,6 +74,7 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 |Oct. 29      | Project Presentations         |             |
 
 # Timeframes
+
 | Component      | Priority | Estimated Time | Time Invested  |
 | ---------------|:------- :| :-------------:|:--------------:|
 |Proposal        |H         |4 hrs           |4 hrs           |
@@ -83,7 +85,7 @@ https://api.airtable.com/v0/app2HujIdBEExdRd1/Events?api_key=keymcQ6E3LYsrFEc7
 |Create Navbar   |H         |2 hrs           |2 hrs           |
 |Application CSS |H         |4 hrs           |6 hrs           |
 |Linting         |H         |2 hrs           |2 hrs           |
-|TOTAL           |H         |24 hrs          |32 hrs          |  
+|TOTAL           |H         |                |                |  
 
 # SWOT Analysis
 
